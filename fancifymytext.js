@@ -1,3 +1,3 @@
 function alertalert() {
-    alert("Hello, world!");
+    document.getElementById("big-text").style.fontSize = "24pt";
 }
