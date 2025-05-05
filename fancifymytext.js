@@ -4,15 +4,22 @@ function alertalert() {
 }
 
 function styleChanger() {
+    var textChange = document.getElementById("text-to-change");
     if (document.getElementById("fancy").checked) {
-        document.getElementById("text-to-change").style.fontWeight = "bold";
-        document.getElementById("text-to-change").style.color = "blue";
-        document.getElementById("text-to-change").style.textDecoration = "underline";
+        textChange.style.fontWeight = "bold";
+        textChange.style.color = "blue";
+        textChange.style.textDecoration = "underline";
         alert("style now fancy");
     } else {
-        document.getElementById("text-to-change").style.fontWeight = "normal";
-        document.getElementById("text-to-change").style.color = "black";
-        document.getElementById("text-to-change").style.textDecoration = "none";
+        textChange.style.fontWeight = "normal";
+        textChange.style.color = "black";
+        textChange.style.textDecoration = "none";
         alert("style now boring");
     }
-    }
+}
+
+function mooText() {
+    var textChange = document.getElementById("text-to-change");
+    textChange.value = textChange.value.toUpperCase();
+    
+}
