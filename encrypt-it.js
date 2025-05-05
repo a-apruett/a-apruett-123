@@ -25,10 +25,26 @@
   // you shouldn't write an entire Java program in the main method).
   function handleClick() {
     console.log("Button clicked!");
+    document.getElementById("result").textContent = shiftCipher(document.getElementById("input-text").value);
   }
 
   function handleReset() {
     document.getElementById("input-text").value = "";
+  }
+
+  function shiftCipher(text) {
+    text = text.toLowerCase();
+    let result = "";
+    for (let c of text ) {
+      if (c < 'a' || c > 'z') {
+        result += c;
+      } else if (c == 'z') {
+        result +='a';
+      } else {
+        result += String.fromCharCode(c.charCodeAt(0)+1);
+      }
+    }
+    return result;
   }
 
 })();
