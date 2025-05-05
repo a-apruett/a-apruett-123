@@ -12,16 +12,16 @@
 		<!-- Your UI controls go here -->
 		 <fieldset>
 			<legend>Text</legend>
-			<textarea id="big-text" rows="4" cols="30"></textarea>
+			<textarea id="text-to-change" rows="4" cols="30"></textarea>
 		 </fieldset>
 
 		 <fieldset>
 			<legend>Fancify</legend>
 			<button type="button" onclick="alertalert()">Bigger!</button><br>
-			<input type="radio" id="FancyShmancy" name="styling" value="Fancy">
-			<label for="html">FancyShmancy</label><br>
-			<input type="radio" id="BoringBetty" name="styling" value="Boring">
-			<label for="css">BoringBetty</label>
+			<input type="radio" id="FancyShmancy" name="styling" value="Fancy" onchange="styleChanger()">
+			<label for="fancy">FancyShmancy</label><br>
+			<input type="radio" id="BoringBetty" name="styling" value="Boring" onchange="styleChanger()">
+			<label for="boring">BoringBetty</label>
 		 </fieldset>
 		
 	</body>
