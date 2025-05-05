@@ -18,13 +18,17 @@
     // for UI elements on the page.
     console.log("Window loaded!");
     document.getElementById("encrypt-it").addEventListener("click",handleClick);
-
+    document.getElementById("reset").addEventListener("click",handleReset);
   }
   // Add any other functions in this area (you should not implement your
   // entire program in the init function, for similar reasons that
   // you shouldn't write an entire Java program in the main method).
   function handleClick() {
-      console.log("Button clicked!");
+    console.log("Button clicked!");
+  }
+
+  function handleReset() {
+    document.getElementById("input-text").value = "";
   }
 
 })();
