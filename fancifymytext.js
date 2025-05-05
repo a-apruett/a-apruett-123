@@ -22,4 +22,7 @@ function mooText() {
     var textChange = document.getElementById("text-to-change");
     textChange.value = textChange.value.toUpperCase();
     
+    var parts = textChange.value.split(".");  // ["How", "are", "you?"]
+    textChange.value = parts.join("-Moo.");   
 }
+    
